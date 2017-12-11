@@ -842,7 +842,7 @@ open class SessionManager {
 
     // MARK: - Internal - Retry Request
 
-    func retry(_ request: Request) -> Bool {
+    public func retry(_ request: Request) -> Bool {
         guard let originalTask = request.originalTask else { return false }
 
         do {
